@@ -7,7 +7,6 @@ const AdminForm = (props) => {
 
     return (
             <Form onSubmit={onSubmitHandler}>
-                
                 <Form.Group className="mb-3">
                     <Form.Label>{
                         errors.name?

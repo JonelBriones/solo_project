@@ -35,9 +35,9 @@ const GymNavbar = (props) => {
         navigate(page)
     }
     return (
-        <Navbar expand="lg" bg="dark" variant="dark" className="navbar">
+        <Navbar expand="lg" bg="dark" variant="dark">
             <Container>
-                <NavbarBrand onClick={()=>redirect('/')}>Home</NavbarBrand>
+                <NavbarBrand onClick={()=>redirect('/')} className="navbar-home">Home</NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

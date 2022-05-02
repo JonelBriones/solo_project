@@ -52,6 +52,7 @@ const Store = (props) => {
                                                 <div>${oneProduct.price}.00</div>
                                             </div>
                                         </div>
+                                </div>
                                     {
                                     cart.map((product)=>(
                                         product._id === oneProduct._id?
@@ -59,7 +60,6 @@ const Store = (props) => {
                                         <Button key={product._id} variant="danger" size="sm" onClick={()=>removeFromCart(oneProduct)}>Remove</Button>:null:null
                                         ))
                                     } 
-                                </div>
                             </div>
                         </div>
                 ))

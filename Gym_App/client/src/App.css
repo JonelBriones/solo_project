@@ -7,6 +7,9 @@
   text-align: center;
 }
 
+.navbar-home {
+  cursor: pointer;
+}
 
 .container {
   margin:auto;
@@ -24,40 +27,17 @@
 }
 .reg-container {
   margin:auto;
+  max-width: 250px;
   border-radius: 20px;
   /* border: 2px solid; */
   justify-content: center;
   padding: 20px;
 }
-.adminReg-container {
-  width: 800px;
-  margin:auto;
-  border-radius: 20px;
-  /* border: 2px solid; */
-  justify-content: center;
-  padding: 20px;
-}
+.sign-up-input input {
+  border: .08rem solid black;
 
-.adminLog-container {
-  width: 800px;
-  margin: auto;
-  border-radius: 20px;
-  /* border: 2px solid; */
-  padding: 20px;
-  display:flex;
-  justify-content: center;
 }
-
-.userReg {
-min-width: 400px;
-/* border: 2px solid purple; */
-display:flex;
-justify-content: center;
-gap: 50px;
-flex-wrap: wrap;
-}
-.userReg input, .userLog input {
-width:250px;
+.login-input input {
 border: .08rem solid black;
 }
 
@@ -283,4 +263,24 @@ button .btn {
 .admin-add-product input {
   border: .12rem solid;
   border-radius: 10px;
+}
+
+
+.adminReg-container {
+  width: 800px;
+  margin:auto;
+  border-radius: 20px;
+  /* border: 2px solid; */
+  justify-content: center;
+  padding: 20px;
+}
+
+.adminLog-container {
+  width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  /* border: 2px solid; */
+  padding: 20px;
+  display:flex;
+  justify-content: center;
 }

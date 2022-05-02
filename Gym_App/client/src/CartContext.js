@@ -9,7 +9,7 @@ export function CartProvider({children}) {
     const itemsPrice = cart.reduce((a,c)=> a+c.price * c.qty, 0);
     const taxPrice = itemsPrice * .0725;
     const taxPriceParsed = parseFloat(itemsPrice * .0725).toFixed(2);
-    const shippingPrice = itemsPrice > 200 || itemsPrice === 0? 20:0;
+    const shippingPrice = itemsPrice > 200? 20:0;
     const totalPrice = parseFloat(itemsPrice + taxPrice + shippingPrice).toFixed(2);
     const addToCart = (productObject) => {
 

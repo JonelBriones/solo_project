@@ -95,8 +95,8 @@ const AdminLoginAndRegistration = (props) => {
                 null
             }
             <div className="container">
-                <div className='adminReg-container'>
-                <div className='userReg'>
+                <div className='reg-container'>
+                <div className='sign-up-input'>
 
                     <AdminForm
                     onSubmitHandler={onSubmitHandlerAdminRegistration}
@@ -109,8 +109,8 @@ const AdminLoginAndRegistration = (props) => {
                 </div>
                 </div>
 
-                <div className="adminLog-container">
-                <div className='userLog'>
+                <div className="log-container">
+                <div className='login-input'>
                     <AdminLogin
                     onSubmitHandler={onSubmitHandlerAdminLogin}
                     onChangeHandler={onChangeHandlerAdminLogin}

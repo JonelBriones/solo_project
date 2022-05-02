@@ -100,21 +100,24 @@ const UserRegistration = (props) => {
     return (
         <div>
             <GymNavbar/>
-            <button className='btn-no-item' onClick={()=>setLoginPage(!loginPage)}>{loginPage?'Sign Up':'Login'}</button>
+            <button className='btn-no-item' onClick={()=>setLoginPage(!loginPage)}>{loginPage?'Go to Sign Up':'Go to Login'}</button>
                 {
                     !loginPage?
                     <div className="reg-container">
-                        <UserForm
-                        onSubmitHandler={onSubmitHandler}
-                        onChangeHandler={onChangeHandler}
-                        user={user}
-                        errors={errors}
-                        confirmReg={confirmReg}
-                        buttonText={'Sign Up'}
-                        />
+                        <div className="sign-up-input">
+
+                            <UserForm
+                            onSubmitHandler={onSubmitHandler}
+                            onChangeHandler={onChangeHandler}
+                            user={user}
+                            errors={errors}
+                            confirmReg={confirmReg}
+                            buttonText={'Sign Up'}
+                            />
+                        </div>
                     </div>:
                 <div className="log-container">
-                    <div className="userLog">
+                    <div className="login-input">
                     <UserLogin
                     onSubmitHandler={onSubmitHandlerLogin}
                     onChangeHandler={onChangeHandlerLogin}

@@ -32,9 +32,9 @@ const AdminNavbar = (props) => {
     }
     return (
         <div>
-            <Navbar expand="lg" bg="dark" variant="dark" className="navbar">
+            <Navbar expand="lg" bg="dark" variant="dark">
             <Container>
-                <NavbarBrand onClick={()=>redirect('/dashboard')}>Admin Dashboard</NavbarBrand>
+                <NavbarBrand onClick={()=>redirect('/dashboard')} className="navbar-home ">Admin Dashboard</NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
