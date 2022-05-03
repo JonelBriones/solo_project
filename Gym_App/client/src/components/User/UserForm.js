@@ -59,7 +59,7 @@ const UserForm = (props) => {
                         <Button type="submit">{buttonText}</Button>
                     </div>
                 <div className='reg-shipping-info'>
-                <h4>Shipping Information</h4>
+                <h4>Shipping Information (Optional)</h4>
                 <Form.Group>
                     <Form.Label>{
                         errors.address?

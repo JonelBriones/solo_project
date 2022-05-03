@@ -24,30 +24,30 @@ const UserSchema = new mongoose.Schema({
     },
     address: {
         type: String,
-        required: [true, "Address is required"]
+        // required: [true, "Address is required"]
     },
     apartment: {
         type: String,
     },
     city: {
         type: String,
-        required: [true, "City is required"]
+        // required: [true, "City is required"]
     },
     countryOrRegion: {
         type: String,
-        required: [true, "Country/Region is required"]
+        // required: [true, "Country/Region is required"]
     },
     state: {
         type: String,
-        required: [true, "State is required"]
+        // required: [true, "State is required"]
     },
     zipcode: {
         type: String,
-        required: [true, "Zipcode is required"]
+        // required: [true, "Zipcode is required"]
     },
     phone: {
         type: String,
-        required: [true, "Phone is required"]
+        // required: [true, "Phone is required"]
     },
     
 }, {timestamps: true});
