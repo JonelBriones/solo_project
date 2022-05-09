@@ -100,7 +100,7 @@ const UserRegistration = (props) => {
     return (
         <div>
             <GymNavbar/>
-            <button className='btn-no-item' onClick={()=>setLoginPage(!loginPage)}>{loginPage?'Go to Sign Up':'Go to Login'}</button>
+            <button className='btn-no-item-border' onClick={()=>setLoginPage(!loginPage)}>{loginPage?'Go to Sign Up':'Go to Login'}</button>
             <div className='home-img-loginReg'>
                 {
                     !loginPage?

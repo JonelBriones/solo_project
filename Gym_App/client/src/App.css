@@ -92,6 +92,15 @@ border: .2rem solid black;
   display:inline;
   width: 300px;
 }
+.btn-no-item-border{
+  padding: 7px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  display:inline;
+  width: 300px;
+  border: none;
+}
 
 .home-content {
 margin:auto;

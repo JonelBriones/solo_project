@@ -43,10 +43,10 @@ const Store = (props) => {
                                     ))
                                 })
                             </Button >
-                            <div className="product-view" onClick={()=>redirect(`${oneProduct.name}`)}>
+                            <div className="product-view">
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           
-                                        <div className="product">
+                                        <div className="product" onClick={()=>redirect(`${oneProduct.name}`)}>
                                             <div className='product-content' >
                                                 <div>{oneProduct.name}</div>
                                                 <div>${oneProduct.price}.00</div>
