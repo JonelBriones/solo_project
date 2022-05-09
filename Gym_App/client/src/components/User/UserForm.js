@@ -11,7 +11,9 @@ const UserForm = (props) => {
                 confirmReg?
             <h1>{confirmReg}</h1>:null
             }
-            <Form onSubmit={onSubmitHandler}>
+            <Form onSubmit={onSubmitHandler} className="sign-up-input">
+            <div className="reg-container">
+                <div className='reg-user-info'>
                     <h4>User Information</h4>
                         <Form.Group className="mb-3">
                             <Form.Label>{
@@ -58,6 +60,7 @@ const UserForm = (props) => {
                     <div className='userReg-btn'>
                         <Button type="submit">{buttonText}</Button>
                     </div>
+                </div>
                 <div className='reg-shipping-info'>
                 <h4>Shipping Information (Optional)</h4>
                 <Form.Group>
@@ -113,6 +116,7 @@ const UserForm = (props) => {
                     <Form.Control type="text" name="phone" value={user.phone} onChange={(e)=>onChangeHandler(e)}/>
                 </Form.Group>
                 </div>
+            </div>
             </Form>
         </>
     )

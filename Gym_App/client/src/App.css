@@ -27,18 +27,34 @@
 }
 .reg-container {
   margin:auto;
-  max-width: 250px;
+  /* max-width: 300px; */
   border-radius: 20px;
-  /* border: 2px solid; */
-  justify-content: center;
+  /* border: 5px solid blue; */
   padding: 20px;
+  display:flex;
+flex-wrap: wrap;
+gap: 50px;
 }
-.sign-up-input input {
-  border: .08rem solid black;
+.reg-user-info {
+  /* border:2px solid white; */
+flex:1;
+}
+.reg-shipping-info {
+  /* border:2px solid white; */
+  flex:1;
+}
+.reg-container h4, .log-container h4 {
+  text-shadow: 0.2rem .13rem .15rem black;
 
 }
+.sign-up-input input {
+  border: .2rem solid black;
+text-align: center;
+  /* max-width: 300px; */
+}
 .login-input input {
-border: .08rem solid black;
+border: .2rem solid black;
+
 }
 
 .userReg-btn {
@@ -49,12 +65,33 @@ border: .08rem solid black;
   color: rgb(255, 255, 255);
   font-weight:bolder;
   font-size: large;
-  height: 90vh;
+  height: 80vh;
   /* object-fit: cover; */
   background-image: url("./images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
   background-size: cover;
   display: flex;
+  justify-content: center;
 }
+.home-img-loginReg {
+  color: rgb(255, 255, 255);
+  font-weight:bolder;
+  font-size: large;
+  height: 80vh;
+  /* object-fit: cover; */
+  background-image: url("./images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.btn-no-item{
+  padding: 7px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  display:inline;
+  width: 300px;
+}
+
 .home-content {
 margin:auto;
 align-items: center;
@@ -135,15 +172,6 @@ width: 500px;
 }
 
 
-
-
-
-.btn-no-item{
-  padding: 7px;
-  background: none;
-  border: 2px solid black;
-  border-radius: 5px;
-}
 .btn {
   padding: 4px;
   background: none;
@@ -266,21 +294,4 @@ button .btn {
 }
 
 
-.adminReg-container {
-  width: 800px;
-  margin:auto;
-  border-radius: 20px;
-  /* border: 2px solid; */
-  justify-content: center;
-  padding: 20px;
-}
 
-.adminLog-container {
-  width: 800px;
-  margin: auto;
-  border-radius: 20px;
-  /* border: 2px solid; */
-  padding: 20px;
-  display:flex;
-  justify-content: center;
-}

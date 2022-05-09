@@ -20,7 +20,7 @@ import Profile from './UserView/Profile';
 import {CartProvider} from './CartContext';
 import GymNavbar from './UserView/GymNavbar';
 import Checkout from './UserView/Checkout';
-
+import AdminStore from './components/Admin/AdminStore';
 function App() {
   return (
     <div className="App">
@@ -29,9 +29,11 @@ function App() {
         <Routes>
           {/* ADMIN */}
           <Route element={<AdminLoginAndRegistration/>} path="/admin"/>
-          <Route element={<Dashboard/>} path="/dashboard"/>
-          <Route element={<AdminViewProduct/>} path="/admin/store"/>
+          <Route element={<Dashboard/>} path="/admin/dashboard"/>
+          {/* <Route element={<AdminViewProduct/>} path="/admin/store"/> */}
           <Route element={<CreateProduct/>} path="/admin/store/add"/>
+          <Route element={<AdminStore/>} path="/admin/store"/>
+
           {/* USERS*/}
           <Route element={<UserRegistration/>} path="/users/"/>
           <Route element={<Home/>} path="/" default/>

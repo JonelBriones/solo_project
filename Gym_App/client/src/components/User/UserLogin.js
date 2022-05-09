@@ -8,6 +8,8 @@ const UserLogin = (props) => {
 
     return (
             <Form onSubmit={onSubmitHandler}>
+                <div className="log-container">
+                <div className="login-input">
                     <h4>User Login</h4>
                     <Form.Group className="mb-3">
                         <Form.Label>{
@@ -25,7 +27,11 @@ const UserLogin = (props) => {
                         }</Form.Label>
                         <Form.Control type="password" name="password" value={user.password} onChange={onChangeHandler}/>
                     </Form.Group>
-                    <Button type="submit">{buttonText}</Button>
+                    <div className='userReg-btn'>
+                        <Button type="submit">{buttonText}</Button>
+                    </div>
+                    </div>
+                    </div>
             </Form>
     )
 }
