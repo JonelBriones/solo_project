@@ -6,8 +6,9 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 // Admin
 import AdminLoginAndRegistration from './components/Admin/AdminLoginAndRegistration';
 import Dashboard from './components/Admin/Dashboard';
-import AdminViewProduct from './View/AdminView/AdminViewProduct';
 import CreateProduct from './components/Products/CreateProduct';
+import AdminStore from './components/Admin/AdminStore';
+import AdminViewProduct from './components/Admin/AdminViewProduct';
 // USERS
 import UserRegistration from './UserView/UserRegistration';
 import Home from './UserView/Home';
@@ -20,7 +21,6 @@ import Profile from './UserView/Profile';
 import {CartProvider} from './CartContext';
 import GymNavbar from './UserView/GymNavbar';
 import Checkout from './UserView/Checkout';
-import AdminStore from './components/Admin/AdminStore';
 function App() {
   return (
     <div className="App">
@@ -30,7 +30,7 @@ function App() {
           {/* ADMIN */}
           <Route element={<AdminLoginAndRegistration/>} path="/admin"/>
           <Route element={<Dashboard/>} path="/admin/dashboard"/>
-          {/* <Route element={<AdminViewProduct/>} path="/admin/store"/> */}
+          <Route element={<AdminViewProduct/>} path="admin/store/:product_name"/>
           <Route element={<CreateProduct/>} path="/admin/store/add"/>
           <Route element={<AdminStore/>} path="/admin/store"/>
 

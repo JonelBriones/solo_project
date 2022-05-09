@@ -43,7 +43,8 @@ flex:1;
   /* border:2px solid white; */
   flex:1;
 }
-.reg-container h4, .log-container h4 {
+.reg-container h4, .log-container h4,
+span {
   text-shadow: 0.2rem .13rem .15rem black;
 
 }

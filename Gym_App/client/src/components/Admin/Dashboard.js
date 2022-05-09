@@ -35,7 +35,7 @@ const Dashboard = (props) => {
     return (
         <div>
             <AdminNavbar/>
-            <h1>hi</h1>
+            <h1>Dashboard</h1>
         </div>
     )
 }

@@ -13,8 +13,8 @@ const AdminForm = (props) => {
                 <Form.Group className="mb-3">
                     <Form.Label>{
                         errors.name?
-                        <span>{errors.name.message}</span>:
-                        <span>Name</span>
+                        <span className="reg-errors"> {errors.name.message}</span>:
+                        <span className="reg-errors">Name</span>
                     }</Form.Label>
                     <Form.Control type="text" name="name" value={admin.name} placeholder="First Name" onChange={(e)=>onChangeHandler(e)}/>
                 </Form.Group>

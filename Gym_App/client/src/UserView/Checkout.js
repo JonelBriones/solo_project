@@ -41,11 +41,11 @@ const Checkout = (props) => {
             {
                 cart.map((oneProduct)=> (
                         <div key={oneProduct._id}>
-                            <div className="product-view">
+                            <div className="product-view" onClick={()=>redirect(`/store/${oneProduct.name}`)}>
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           
                                         <div className="product">
-                                            <div className='product-content-checkout' onClick={()=>redirect(`${oneProduct.name}`)}>
+                                            <div className='product-content-checkout'>
                                                 <div>{oneProduct.name}</div>
                                                 <div>${oneProduct.price}.00</div>
                                             </div>

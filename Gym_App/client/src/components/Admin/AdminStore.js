@@ -26,7 +26,7 @@ const AdminStore = (props) => {
         <>
             <AdminNavbar/>
             <div className="container">
-            <h1>Store</h1>
+            <h1>Admin Store</h1>
             <hr/>
             <p>Products below are used for demo purposes.</p>
             <hr/>
@@ -34,11 +34,11 @@ const AdminStore = (props) => {
             {
                 product.map((oneProduct)=> (
                         <div key={oneProduct._id}>
-                            <div className="product-view">
+                            <div className="product-view"onClick={()=>redirect(`${oneProduct.name}`)}>
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           
                                         <div className="product">
-                                            <div className='product-content' onClick={()=>redirect(`${oneProduct.name}`)}>
+                                            <div className='product-content'>
                                                 <div>{oneProduct.name}</div>
                                                 <div>${oneProduct.price}.00</div>
                                             </div>

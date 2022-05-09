@@ -66,7 +66,7 @@ const AdminLoginAndRegistration = (props) => {
         })
             .then((res)=>{
                 console.log(res.data)
-                navigate("/dashboard");
+                navigate("/admin/dashboard");
             })
             .catch((err)=> {
                 console.log(err.response.data.message)

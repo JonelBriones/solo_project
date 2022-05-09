@@ -13,7 +13,7 @@ const AdminNavbar = (props) => {
             })
             .catch((err)=>{
                 console.log(err)
-                // navigate('/users')
+                navigate('/admin')
             })
     },[])
     const logout = () => {
@@ -23,7 +23,7 @@ const AdminNavbar = (props) => {
         })
             .then((res)=>{
                 console.log(res.data)
-                navigate("/admins")
+                navigate("/admin")
             })
             .catch((err)=>console.log(err))
     }
