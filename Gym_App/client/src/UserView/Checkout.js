@@ -100,7 +100,7 @@ const Checkout = (props) => {
                             <input type="text" placeholder={loggedUser.phone?loggedUser.phone:'Phone'} value={loggedUser.phone} required></input>
                         </div>
                         <div className='checkout-btn'>
-                            <button type="submit" onClick={()=>alert('Proccessing... Sorry this is a fake website!')}>Continue to Shipping Method</button>
+                            <button type="submit" onClick={()=>alert('Proccessing... Sorry this is a fake website!')}>Purchase</button>
                         </div>
                     </form>
                 </div>

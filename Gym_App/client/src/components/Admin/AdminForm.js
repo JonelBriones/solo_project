@@ -9,6 +9,7 @@ const AdminForm = (props) => {
             <Form onSubmit={onSubmitHandler} className="sign-up-input">
                 <div className="reg-container">
                 <div className='reg-user-info'>
+                <h1>Admin Login & Registration</h1>
             
                 <Form.Group className="mb-3">
                     <Form.Label>{

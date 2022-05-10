@@ -88,28 +88,29 @@ const AdminLoginAndRegistration = (props) => {
 
     return (
         <div>
-            <h1>Admin Login & Registration</h1>
             {
                 confirmReg?
                 <h1>{confirmReg}</h1>:
                 null
             }
-            <div className="container">
-                    <AdminForm
-                    onSubmitHandler={onSubmitHandlerAdminRegistration}
-                    onChangeHandler={onChangeHandlerAdminRegistration}
-                    admin={adminRegistration}
-                    errors={adminRegistrationErrors}
-                    confirmReg={confirmReg}
-                    buttonText={'Sign Up'}
-                    />
-                    <AdminLogin
-                    onSubmitHandler={onSubmitHandlerAdminLogin}
-                    onChangeHandler={onChangeHandlerAdminLogin}
-                    admin={adminLogin}
-                    errors={adminLoginErrors}
-                    buttonText={'Login'}
-                    />  
+            <div className="home-img-loginReg">
+                <div className="admin-container">
+                        <AdminForm
+                        onSubmitHandler={onSubmitHandlerAdminRegistration}
+                        onChangeHandler={onChangeHandlerAdminRegistration}
+                        admin={adminRegistration}
+                        errors={adminRegistrationErrors}
+                        confirmReg={confirmReg}
+                        buttonText={'Sign Up'}
+                        />
+                        <AdminLogin
+                        onSubmitHandler={onSubmitHandlerAdminLogin}
+                        onChangeHandler={onChangeHandlerAdminLogin}
+                        admin={adminLogin}
+                        errors={adminLoginErrors}
+                        buttonText={'Login'}
+                        />  
+                </div>
             </div>
         </div>
         

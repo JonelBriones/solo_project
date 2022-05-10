@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 .App {
   text-align: center;
@@ -17,6 +18,9 @@
   justify-content: space-evenly;
   padding:20px;
 }
+.admin-container {
+margin-top: 50px;
+}
 .log-container {
   margin: auto;
   border-radius: 20px;
@@ -24,16 +28,19 @@
   padding: 20px;
   display:flex;
   justify-content: center;
+
 }
 .reg-container {
+  /* color: rgb(255, 255, 255); */
   margin:auto;
   /* max-width: 300px; */
   border-radius: 20px;
   /* border: 5px solid blue; */
   padding: 20px;
   display:flex;
-flex-wrap: wrap;
-gap: 50px;
+  flex-wrap: wrap;
+  gap: 50px;
+  /* background-color: black; */
 }
 .reg-user-info {
   /* border:2px solid white; */
@@ -44,9 +51,16 @@ flex:1;
   flex:1;
 }
 .reg-container h4, .log-container h4,
-span {
+.reg-container span, .log-container span
+ {
   text-shadow: 0.2rem .13rem .15rem black;
-
+  color: rgb(255, 255, 255);
+  font-weight:bolder;
+  font-size: large;
+}
+.reg-container h1 {
+  text-shadow: 0.2rem .13rem .15rem black;
+  color: rgb(255, 255, 255);
 }
 .sign-up-input input {
   border: .2rem solid black;
@@ -63,9 +77,6 @@ border: .2rem solid black;
 }
 
 .home-img {
-  color: rgb(255, 255, 255);
-  font-weight:bolder;
-  font-size: large;
   height: 80vh;
   /* object-fit: cover; */
   background-image: url("./images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
@@ -77,7 +88,7 @@ border: .2rem solid black;
   color: rgb(255, 255, 255);
   font-weight:bolder;
   font-size: large;
-  height: 80vh;
+  height: 100vh;
   /* object-fit: cover; */
   background-image: url("./images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
   background-size: cover;
