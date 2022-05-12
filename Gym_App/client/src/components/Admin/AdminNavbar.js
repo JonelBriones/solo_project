@@ -41,11 +41,11 @@ const AdminNavbar = (props) => {
                     <NavLink onClick={()=>redirect('/admin/store')}>Store</NavLink>
                     <NavLink onClick={()=>redirect('/admin/store/add')}>Add Product</NavLink>
                     <NavDropdown title="Settings" id="basic-nav-dropdown">
-                        {
+                        {/* {
                             !loggedAdmin._id?
                             <NavDropdown.Item onClick={()=>redirect('/admin')}>Sign in</NavDropdown.Item>:
                             <NavDropdown.Item onClick={()=>redirect('/admin/profile/' + loggedAdmin._id)}>{loggedAdmin.name}</NavDropdown.Item>
-                        }
+                        } */}
                     <NavDropdown.Item onClick={()=>logout()}>Logout</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>

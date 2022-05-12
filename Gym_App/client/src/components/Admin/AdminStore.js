@@ -34,6 +34,7 @@ const AdminStore = (props) => {
             {
                 product.map((oneProduct)=> (
                         <div key={oneProduct._id}>
+                            <Button className='btn-add' variant="info" size="sm"  onClick={()=>redirect(`update/${oneProduct._id}`)}>Update </Button >
                             <div className="product-view"onClick={()=>redirect(`${oneProduct.name}`)}>
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           

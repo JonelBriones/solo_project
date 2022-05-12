@@ -21,6 +21,7 @@ import Profile from './UserView/Profile';
 import {CartProvider} from './CartContext';
 import GymNavbar from './UserView/GymNavbar';
 import Checkout from './UserView/Checkout';
+import UpdateProduct from './components/Products/UpdateProduct';
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
           <Route element={<Dashboard/>} path="/admin/dashboard"/>
           <Route element={<AdminViewProduct/>} path="admin/store/:product_name"/>
           <Route element={<CreateProduct/>} path="/admin/store/add"/>
+          <Route element={<UpdateProduct/>} path="/admin/store/update/:productId"/>
           <Route element={<AdminStore/>} path="/admin/store"/>
 
           {/* USERS*/}

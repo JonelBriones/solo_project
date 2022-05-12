@@ -83,6 +83,8 @@ border: .2rem solid black;
   background-size: cover;
   display: flex;
   justify-content: center;
+  color: rgb(255, 255, 255);
+
 }
 .home-img-loginReg {
   color: rgb(255, 255, 255);

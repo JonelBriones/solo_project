@@ -24,7 +24,7 @@ module.exports = {
             })
     },
     getProduct: (req,res) => {
-        Product.findOne({name:req.params.id})
+        Product.findOne({_id:req.params.id})
             .then((findOneProduct) => {
                 res.json(findOneProduct)
                 console.log(findOneProduct);

@@ -18,6 +18,7 @@ const AdminViewProduct = (props) => {
             })
             .catch((err)=>{console.log(err)})
     },[])
+
     const redirect = (page) => {
         navigate(page)
     }
