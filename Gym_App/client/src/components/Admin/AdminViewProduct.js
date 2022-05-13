@@ -22,6 +22,22 @@ const AdminViewProduct = (props) => {
     const redirect = (page) => {
         navigate(page)
     }
+    const onDeleteHandler = (id) => {
+        axios.delete(`http://localhost:8000/api/admin/products/${id}`,{withCredentials:true})
+            .then((res)=> {
+                // successCallback();
+                // disconnect before leaving
+                navigate("/admin/store");
+
+            })
+            .catch(err=> {
+                console.log(err);
+            })
+    }
+    const removeFromDom = (productId) => {
+        console.log("Delete: ",productId)
+        navigate("/admin/store")
+    }
     return (
         <>
             <AdminNavbar/>
@@ -37,6 +53,8 @@ const AdminViewProduct = (props) => {
                         <p>{product.description}</p>
                         <hr/>
                         <p>Product above are used for demo purposes.</p>
+                        <Button className='btn-add' variant="danger" size="sm" 
+                        onClick={()=>onDeleteHandler(product._id)}>Delete </Button >
                         <hr/>
                     </div>
                 </div>

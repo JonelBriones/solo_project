@@ -35,7 +35,7 @@ module.exports = {
             })
     },
     updateProduct: (req,res) => {
-        Product.findOneAndUpdate({_id:req.params.id},req.body)
+        Product.findOneAndUpdate({_id:req.params.id},req.body,{new:true,runValidators:true})
             .then((updateProduct) => {
                 res.json(updateProduct)
                 console.log(updateProduct);

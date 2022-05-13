@@ -44,11 +44,11 @@ const ProductForm = (props) => {
 
                 <Form.Group>
                     <Form.Label>{
-                        errors.category?
+                        errors.price?
                         <span>{errors.price.message}</span>:
                         <span>Price</span>
                     }</Form.Label>
-                    <Form.Control type="text" name="price" value={product.price} onChange={(e)=>onChangeHandler(e)}/>
+                    <Form.Control type="number" step="0.01" name="price" value={product.price} onChange={(e)=>onChangeHandler(e)}/>
                 </Form.Group>
                 <Button type="submit">{buttonText}</Button>
             </Form>

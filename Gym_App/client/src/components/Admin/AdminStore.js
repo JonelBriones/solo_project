@@ -35,13 +35,13 @@ const AdminStore = (props) => {
                 product.map((oneProduct)=> (
                         <div key={oneProduct._id}>
                             <Button className='btn-add' variant="info" size="sm"  onClick={()=>redirect(`update/${oneProduct._id}`)}>Update </Button >
-                            <div className="product-view"onClick={()=>redirect(`${oneProduct.name}`)}>
+                            <div className="product-view"onClick={()=>redirect(`${oneProduct._id}`)}>
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           
                                         <div className="product">
                                             <div className='product-content'>
                                                 <div>{oneProduct.name}</div>
-                                                <div>${oneProduct.price}.00</div>
+                                                <div>${oneProduct.price}</div>
                                             </div>
                                         </div>
                                 </div>
