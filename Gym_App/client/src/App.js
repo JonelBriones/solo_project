@@ -31,7 +31,7 @@ function App() {
           {/* ADMIN */}
           <Route element={<AdminLoginAndRegistration/>} path="/admin"/>
           <Route element={<Dashboard/>} path="/admin/dashboard"/>
-          <Route element={<AdminViewProduct/>} path="admin/store/:product_name"/>
+          <Route element={<AdminViewProduct/>} path="admin/store/:product_id"/>
           <Route element={<CreateProduct/>} path="/admin/store/add"/>
           <Route element={<UpdateProduct/>} path="/admin/store/update/:productId"/>
           <Route element={<AdminStore/>} path="/admin/store"/>
@@ -40,7 +40,7 @@ function App() {
           <Route element={<UserRegistration/>} path="/users/"/>
           <Route element={<Home/>} path="/" default/>
           <Route element={<Store/>} path="/store"/>
-          <Route element={<ViewProduct/>} path="/store/:product_name"/>
+          <Route element={<ViewProduct/>} path="/store/:product_id"/>
           <Route element={<Cart/>} path="/cart"/>
           <Route element={<Checkout/>} path="/store/checkout"/>
           {/* LOGGED USERS */}

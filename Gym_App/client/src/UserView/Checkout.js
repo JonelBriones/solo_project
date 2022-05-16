@@ -44,7 +44,7 @@ const Checkout = (props) => {
                             <div className="product-view">
                                 <div className='product-image'
                                     style={{backgroundImage: `url(${oneProduct.image})`}}>           
-                                        <div className="product" onClick={()=>redirect(`/store/${oneProduct.name}`)}>
+                                        <div className="product" onClick={()=>redirect(`/store/${oneProduct._id}`)}>
                                             <div className='product-content-checkout'>
                                                 <div>{oneProduct.name}</div>
                                                 <div>${oneProduct.price}.00</div>

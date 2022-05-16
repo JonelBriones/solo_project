@@ -7,11 +7,11 @@ import GymNavbar from './GymNavbar';
 const ViewProduct = (props) => {
     const navigate = useNavigate();
     const [product,setProduct] = useState([])
-    const {product_name} = useParams();
-    const {productId} = useParams();
+    // const {product_name} = useParams();
+    const {product_id} = useParams();
     const {cart,addToCart,removeFromCart} = useContext(CartContext);
     useEffect(()=> {
-        axios.get("http://localhost:8000/api/product/" + product_name)
+        axios.get("http://localhost:8000/api/product/" + product_id)
             .then((res)=>{
                 console.log(res.data)
                 setProduct(res.data)
