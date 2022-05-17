@@ -32,7 +32,7 @@ const ViewProduct = (props) => {
                     <div className='product-view-content'>
                         <h1>{product.name}</h1>
                         <hr></hr>
-                        <h2>{product.price}</h2>
+                        <h2>${product.price}</h2>
                         <div>
                             <Button variant="info" size="sm" onClick={()=>addToCart(product)}>Add 
                             ({

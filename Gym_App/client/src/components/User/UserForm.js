@@ -7,13 +7,13 @@ const UserForm = (props) => {
 
     return (
         <>
+            <Form onSubmit={onSubmitHandler} className="sign-up-input">
+            <div className="reg-container">
+                <div className='reg-user-info'>
             {
                 confirmReg?
             <h1>{confirmReg}</h1>:null
             }
-            <Form onSubmit={onSubmitHandler} className="sign-up-input">
-            <div className="reg-container">
-                <div className='reg-user-info'>
                     <h4>User Information</h4>
                         <Form.Group className="mb-3">
                             <Form.Label>{

@@ -3,14 +3,18 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 const AdminForm = (props) => {
 
-    const {admin,onSubmitHandler,errors,onChangeHandler,buttonText} = props;
+    const {admin,onSubmitHandler,errors,onChangeHandler,buttonText,confirmReg} = props;
 
     return (
             <Form onSubmit={onSubmitHandler} className="sign-up-input">
                 <div className="reg-container">
                 <div className='reg-user-info'>
-                <h1>Admin Login & Registration</h1>
-            
+                    <h1>Admin Login & Registration</h1>
+                    {
+                    confirmReg?
+                    <h1>{confirmReg}</h1>:
+                    null
+                    }
                 <Form.Group className="mb-3">
                     <Form.Label>{
                         errors.name?

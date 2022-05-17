@@ -49,7 +49,7 @@ const AdminViewProduct = (props) => {
                     <div className='product-view-content'>
                         <h1>{product.name}</h1>
                         <hr></hr>
-                        <h2>{product.price}</h2>
+                        <h2>${product.price}</h2>
                         <p>{product.description}</p>
                         <hr/>
                         <p>Product above are used for demo purposes.</p>

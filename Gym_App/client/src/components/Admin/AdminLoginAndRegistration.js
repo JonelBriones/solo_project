@@ -88,11 +88,6 @@ const AdminLoginAndRegistration = (props) => {
 
     return (
         <div>
-            {
-                confirmReg?
-                <h1>{confirmReg}</h1>:
-                null
-            }
             <div className="home-img-loginReg">
                 <div className="admin-container">
                         <AdminForm
