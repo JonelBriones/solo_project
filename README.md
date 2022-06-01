@@ -1,2 +1,2 @@
 # solo_project
-Hello! I made this project for my coding bootcamp and presented it too all my classmates and teachers!
+Ecommerce App built with MongoDB, Express, React, and Node.js
