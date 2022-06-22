@@ -77,10 +77,11 @@ border: .2rem solid black;
 }
 
 .home-img {
-  height: 80vh;
+  height: 100vh;
   /* object-fit: cover; */
   background-image: url("./images/anastase-maragos-HyvE5SiKMUs-unsplash.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255);
