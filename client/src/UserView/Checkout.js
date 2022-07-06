@@ -9,6 +9,8 @@ const Checkout = (props) => {
     const [orderSummary,setOrderSummary] = useState(false);
     const redirect = (page)=>{
         navigate(page);
+        window.location.reload();
+
     }
     const [loggedUser,setLoggedUser] = useState({})
     useEffect(()=>{
@@ -69,39 +71,46 @@ const Checkout = (props) => {
                             !loggedUser.email?
                             <label>Already have an account?<Link to={'/users'}>Log In</Link></label>:null
                             }
-                            <input type="text" placeholder={loggedUser.email?loggedUser.email:'Email'} value={loggedUser.email}required></input>
+                            <input type="text" placeholder={loggedUser.email?loggedUser.email:'Email'} value={loggedUser.email} required></input>
                         </div>
-                        <div>
+                        {/* <div>
                             <label>Shipping Address</label>
-                            <input type="text" placeholder={loggedUser.firstName?loggedUser.firstName:'First Name'} value={loggedUser.firstName} required></input>
+                            <input type="text" placeholder="First Name" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.lastName?loggedUser.lastName:'Last Name'} value={loggedUser.lastName} required></input>
+                            <input type="text" placeholder="Last Name" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.address?loggedUser.address:'Address'} value={loggedUser.address} required></input>
+                            <input type="text" placeholder="Address" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.apartment?loggedUser.apartment:'Apartment (optional)'}></input>
+                            <input type="text" placeholder="Apartement (optional)"></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.city?loggedUser.city:'City'} value={loggedUser.city} required></input>
+                            <input type="text" placeholder="City" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.countryOrRegion?loggedUser.countryOrRegion:'Country/Region'} value={loggedUser.countryOrRegion} required></input>
+                            <input type="text" placeholder="Country/Region" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.state?loggedUser.state:'State'} value={loggedUser.state} required></input>
+                            <input type="text" placeholder="State" required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.zipcode?loggedUser.zipcode:'Zipcode'} value={loggedUser.zipcode} required></input>
+                            <input type="text" placeholder="Zipcode"required></input>
                         </div>
                         <div>
-                            <input type="text" placeholder={loggedUser.phone?loggedUser.phone:'Phone'} value={loggedUser.phone} required></input>
+                            <input type="text" placeholder="Phone Number"required></input>
                         </div>
-                        <div className='checkout-btn'>
-                            <button type="submit" onClick={()=>alert('Proccessing... Sorry this is a fake website!')}>Purchase</button>
+                        */}
+                        {
+                            loggedUser.email?
+                            <div className='checkout-btn'>
+                            <button type="submit" onClick={()=>(alert('Thank you for your purchase!'),redirect("/"))}>Purchase</button>
                         </div>
+                        :<div className='checkout-btn-disabled'>
+                            <button type="submit" onMouseOver={()=>alert('Please Log In!')} disabled>Purchase</button>
+                        </div>
+                        }
                     </form>
                 </div>
             </div>

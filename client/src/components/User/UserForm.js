@@ -61,7 +61,7 @@ const UserForm = (props) => {
                         <Button type="submit">{buttonText}</Button>
                     </div>
                 </div>
-                <div className='reg-shipping-info'>
+                {/* <div className='reg-shipping-info'>
                 <h4>Shipping Information (Optional)</h4>
                 <Form.Group>
                     <Form.Label>{
@@ -115,7 +115,7 @@ const UserForm = (props) => {
                     }</Form.Label>
                     <Form.Control type="text" name="phone" value={user.phone} onChange={(e)=>onChangeHandler(e)}/>
                 </Form.Group>
-                </div>
+                </div> */}
             </div>
             </Form>
         </>

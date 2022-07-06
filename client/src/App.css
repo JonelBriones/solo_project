@@ -289,8 +289,18 @@ button .btn {
   transition: all .3s ease;
   color:white;
   box-shadow: .2rem .2rem .3rem black;
-
-
+}
+.checkout-btn-disabled {
+  margin: 6px;
+  line-height: 1;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.checkout-btn-disabled button {
+  padding: .5rem;
+  border-radius: 10px;
+  transition: all .4s ease;
+  box-shadow: .2rem .2rem .3rem black;
 }
 .checkout-form {
   margin-top: 20px;
